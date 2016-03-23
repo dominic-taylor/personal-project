@@ -1,14 +1,17 @@
 // module.exports = {
   function markActivePanel(el) {
     console.log(el.id, 'has been clicked.')
-    el.className = 'panel-active'
+    console.log(el.className)
+    el.className = el.className+' panel-active'
     return (el.id)
   }
 
   function addImage() {
     // need to be able to specify image src and element it will be posted to
-    var panel = el.id
-    document.getElementById(panel).innerHTML='<img src="./images/smiley.png"/> '
+
+    var panel = document.getElementsByClassName('panel-active')
+    console.log(panel[0].id)
+    document.getElementById(panel[0].id).innerHTML='<img src="./images/smiley.png"/> '
   }
 
 // }
