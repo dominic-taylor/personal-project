@@ -1,15 +1,15 @@
 // module.exports = {
-  function addImage() {
-    var panel = document.getElementById('panel')
-    var ctx = panel.getContext('2d')
-    console.log(ctx.drawImage)
-    var img = document.createElement("img")
+  function markActivePanel(el) {
+    console.log(el.id, 'has been clicked.')
+    el.className = 'panel-active'
+    return (el.id)
+  }
 
-    img.id = 'image'
-    img.src = './images/smiley.png'
-    console.log(img)
-    ctx.drawImage(img, 0, 0, 100, 100)
-    console.log("add img button click avtivating function")
+  function addImage() {
+    // need to be able to specify image src and element it will be posted to
+    var panel = el.id
+    document.getElementById(panel).innerHTML='<img src="./images/smiley.png"/> '
   }
 
 // }
+//LOOK UP SVG

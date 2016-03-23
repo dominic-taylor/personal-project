@@ -8,9 +8,18 @@ main {
   border: 3px solid #000000;
 }
 
-#panel {
+.panel {
+  display: inline-block;
   height: 100px;
   width: 100px;
   border: 1px solid #000000;
+  margin: 2px;
+}
+
+.panel-active {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #3399ff;
   margin: 2px;
 }
