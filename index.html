@@ -8,17 +8,26 @@
   </head>
   <body>
     <main>
-      <h1>ComiCapp</h1>
-      <div id='page'>
-        <div id='panel-1' class='panel' onclick="markActivePanel(this)"></div>
-        <div id='panel-2' class='panel' onclick="markActivePanel(this)"></div>
-        <div id='panel-3' class='panel' onclick="markActivePanel(this)"></div>
-        <div id='panel-4' class='panel' onclick="markActivePanel(this)"></div>
-        <div id='panel-6' class='big-panel' onclick="markActivePanel(this)"></div>
-        <div id='panel-7' class='big-panel' onclick="markActivePanel(this)"></div>
-      </div>
-      <button id='add-img' onclick="addImage()">Add</button>
-    </main>
+
+        <h1>ComiCapp</h1>
+      <div id="wrapper">
+
+        <div id='page'>
+          <div id='panel-1' class='panel' onclick="markActivePanel(this)"></div>
+          <div id='panel-2' class='panel' onclick="markActivePanel(this)"></div>
+          <div id='panel-3' class='panel' onclick="markActivePanel(this)"></div>
+          <div id='panel-4' class='panel' onclick="markActivePanel(this)"></div>
+          <div id='panel-6' class='big-panel' onclick="markActivePanel(this)"></div>
+          <div id='panel-7' class='big-panel' onclick="markActivePanel(this)"></div>
+        </div> <!-- end page -->
+
+        <div id='menu'>
+          <p>Hi i am menu</p>
+          <button id='add-img' onclick="addImage()">Add</button>
+        </div> <!-- end menu -->
+
+      </div> <!-- end wrapper -->
+  </main>
     <script src="index.js"></script>
   </body>
 </html>
