@@ -27,6 +27,11 @@ main {
   width: 100px;
   border: 1px solid #000000;
   margin: 2px auto;
+  position: relative;
+}
+.panel.ui-resizable-handle {
+  position: relative;
+  border: 1px solid;
 }
 
 .big-panel {

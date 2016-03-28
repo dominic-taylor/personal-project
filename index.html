@@ -5,6 +5,8 @@
     <title>ComiCapp</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="index.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
   </head>
   <body>
     <main>
@@ -13,23 +15,25 @@
       <div id="wrapper">
 
         <div id='page'>
-          <div id='panel-1' class='panel' onclick="markActivePanel(this)"></div>
-          <div id='panel-2' class='panel' onclick="markActivePanel(this)"></div>
-          <div id='panel-3' class='panel' onclick="markActivePanel(this)"></div>
-          <div id='panel-4' class='panel' onclick="markActivePanel(this)"></div>
-          <div id='panel-6' class='big-panel' onclick="markActivePanel(this)"></div>
-          <div id='panel-7' class='big-panel' onclick="markActivePanel(this)"></div>
+          <div id='panel-1' class='panel' ></div>
+          <div id='panel-2' class='panel' ></div>
+          <div id='panel-3' class='panel' ></div>
+          <div id='panel-4' class='panel' ></div>
+          <div id='panel-6' class='big-panel' ></div>
+          <div id='panel-7' class='big-panel' ></div>
         </div> <!-- end page -->
 
         <div id='menu'>
           <p>Menu</p>
           <button id='add-img' onclick="addImage()">Add</button>
+          <button id='add-img' onclick="destroyPanel()">Remove</button>
         </div> <!-- end menu -->
 
       </div> <!-- end wrapper -->
   </main>
-    <script src="index.js"></script>
+
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+     <script src="index.js"></script>
   </body>
 </html>
