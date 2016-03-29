@@ -24,9 +24,18 @@
         </div> <!-- end page -->
 
         <div id='menu'>
+
           <p>Menu</p>
-          <button id='add-img' onclick="addImage()">Add</button>
-          <button id='add-img' onclick="destroyPanel()">Remove</button>
+
+          <button id='menu-btn' onclick="destroyPanel()">Remove</button>
+
+          <div id='new-panel' class='panel'></div>
+
+           <form>
+                <input type="text" id="image-url" name="imageurl" value="Enter image URL">
+                <button id="submit-image" value="Add Image">
+            </form>
+
         </div> <!-- end menu -->
 
       </div> <!-- end wrapper -->
@@ -34,6 +43,6 @@
 
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-     <script src="index.js"></script>
+      <script src="index.js"></script>
   </body>
 </html>

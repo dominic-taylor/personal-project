@@ -1,21 +1,18 @@
 $(document).ready(function() {
  $(".panel").click(markActivePanel)
  $(".big-panel").click(markActivePanel)
- $("#menu").resizable()
+ $("#submit-image").click(addImage)
  });
-// }
-//LOOK UP SVG
 
 function destroyPanel(event) {
   $('.panel-active').remove()
 }
 
-
 function markActivePanel(event) {
     $('.panel-active').removeClass('panel-active')
     $(this).addClass("panel-active")
     $(this).draggable({
-      cursor: "grabbing"
+      cursor: "grab"
     })
 
     $(this).resizable({
@@ -36,20 +33,13 @@ function markActivePanel(event) {
     })
 }
 
-  function addImage() {
-    // need to be able to specify image src and element it will be posted to
-
+  function addImage(event) {
+    event.preventDefault()
+    var url = document.getElementById('image-url').value
+    console.log(url)
     var panel = document.getElementsByClassName('panel-active')
     console.log(panel[0].id)
-    document.getElementById(panel[0].id).innerHTML='<img src="./images/smiley.png"/> '
+    document.getElementById(panel[0].id).innerHTML='<img src="'+url+'"/> '
     document.getElementById(panel[0].id).classList.remove('panel-active')
   }
 
- // function drag() {
- //   $('.panel-active').draggable();
- //   $('.panel-active').resizable();
- // }
-
- // function resize() {
-
- // }
