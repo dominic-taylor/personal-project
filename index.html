@@ -10,8 +10,7 @@
   </head>
   <body>
     <main>
-
-        <h1>ComiCapp</h1>
+      <h1>ComiCapp</h1>
       <div id="wrapper">
 
         <div id='page'>
@@ -19,21 +18,21 @@
           <div id='panel-2' class='panel' ></div>
           <div id='panel-3' class='panel' ></div>
           <div id='panel-4' class='panel' ></div>
-          <div id='panel-6' class='big-panel' ></div>
-          <div id='panel-7' class='big-panel' ></div>
+          <!-- <div id='panel-6' class='big-panel' ></div>
+          <div id='panel-7' class='big-panel' ></div> -->
         </div> <!-- end page -->
 
         <div id='menu'>
 
-          <p>Menu</p>
+          <h3>Menu</h3>
 
-          <button id='menu-btn' onclick="destroyPanel()">Remove</button>
-
-          <div id='new-panel' class='panel'></div>
+          <button class='menu-btn' onclick="destroyPanel()">Remove</button>
+          <button class='menu-btn' onclick='newPanel()'>New Panel</button>
+          <!-- <div id='panel' class='panel'></div> -->
 
            <form>
-                <input type="text" id="image-url" name="imageurl" value="Enter image URL">
-                <button id="submit-image" value="Add Image">
+                <input type="text" id="image-url" name="imageurl" value="Enter image URL" onclick="this.select()">
+                <button id="submit-image">Add Image</button>
             </form>
 
         </div> <!-- end menu -->

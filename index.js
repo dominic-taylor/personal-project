@@ -9,7 +9,11 @@ function destroyPanel(event) {
 }
 
 function markActivePanel(event) {
+
     $('.panel-active').removeClass('panel-active')
+    $('.ui-resizable').resizable('destroy')
+    $('.ui-draggable').draggable('destroy')
+
     $(this).addClass("panel-active")
     $(this).draggable({
       cursor: "grab"
@@ -31,7 +35,17 @@ function markActivePanel(event) {
             });
           }
     })
+
+
 }
+ function newPanel() {
+console.log('new')
+  var number = $('.panel').length
+  $("#page").append("<div id='panel-"+number+"'class='panel panel-active' ></div>")
+
+ }
+
+
 
   function addImage(event) {
     event.preventDefault()
