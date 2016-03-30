@@ -3,13 +3,17 @@ main {
 }
 
 textarea {
+  background: none;
   resize: none;
   border: none;
-  height: 80%;
-  width: 80%;
+  height: 40%;
+  width: 50%;
+  position: absolute;
+  left: 35%;
+  top: 50px;
 }
 img {
-  max-width: 100%
+  width: 100%
   z-index: -1;
 }
 #speech{
