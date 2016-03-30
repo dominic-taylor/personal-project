@@ -16,7 +16,7 @@ function markActivePanel(event) {
 
     $(this).addClass("panel-active")
     $(this).draggable({
-      cursor: "grab"
+      cursor: "crosshair"
     })
 
     $(this).resizable({
@@ -39,11 +39,16 @@ function markActivePanel(event) {
 
 }
  function newPanel() {
-console.log('new')
   var number = $('.panel').length
   $("#page").append("<div id='panel-"+number+"'class='panel panel-new' ></div>")
-
  }
+
+  function newText() {
+  console.log('hi')
+  var number = $('textarea').length
+  $("#page").append("<div id='panel-"+number+"'><textarea id='text-box"+number+"'class='panel'></textarea> </div>")
+ }
+
 
 
 

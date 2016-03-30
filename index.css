@@ -1,6 +1,13 @@
 main {
   text-align: center;
 }
+
+textarea {
+  resize: none;
+  border: none;
+  height: 90%;
+  width: 90%;
+}
 #wrapper {
   width: 100%;
 }
@@ -22,6 +29,10 @@ main {
 .image-url-input{
   resize: none;
 }
+.menu-btn{
+  display: inline;
+  margin: 5px auto;
+}
 .panel {
   display: inline-block;
   height: 100px;
@@ -34,17 +45,6 @@ main {
   position: relative;
   border: 1px solid;
 }
-
-.big-panel {
-  display: block;
-  float: left;
-  height: 200px;
-  width: 200px;
-  border: 1px solid #000000;
-  margin: 2px;
-  margin-left: 30px;
-}
-
 .panel-active {
   display: inline-block;
   border: 1px dashed #3399ff;
@@ -53,6 +53,20 @@ main {
 
 .panel-new {
   display: inline-block;
-  border: 1px solid #B20000;
+  border: 1px solid #3399FF;
   margin: 2px;
+}
+.text-box {
+display:inline-block;
+ resize: none;
+ border: 1px solid #72FF33;
+}
+.big-panel {
+  display: block;
+  float: left;
+  height: 200px;
+  width: 200px;
+  border: 1px solid #000000;
+  margin: 2px;
+  margin-left: 30px;
 }
