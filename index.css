@@ -50,3 +50,9 @@ main {
   border: 1px dashed #3399ff;
   margin: 2px;
 }
+
+.panel-new {
+  display: inline-block;
+  border: 1px solid #B20000;
+  margin: 2px;
+}

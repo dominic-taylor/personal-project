@@ -1,5 +1,5 @@
 $(document).ready(function() {
- $(".panel").click(markActivePanel)
+ $("#page").on('click','.panel', markActivePanel)
  $(".big-panel").click(markActivePanel)
  $("#submit-image").click(addImage)
  });
@@ -9,7 +9,7 @@ function destroyPanel(event) {
 }
 
 function markActivePanel(event) {
-
+    $('.panel').removeClass('panel-new')
     $('.panel-active').removeClass('panel-active')
     $('.ui-resizable').resizable('destroy')
     $('.ui-draggable').draggable('destroy')
@@ -41,7 +41,7 @@ function markActivePanel(event) {
  function newPanel() {
 console.log('new')
   var number = $('.panel').length
-  $("#page").append("<div id='panel-"+number+"'class='panel panel-active' ></div>")
+  $("#page").append("<div id='panel-"+number+"'class='panel panel-new' ></div>")
 
  }
 
