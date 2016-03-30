@@ -45,8 +45,9 @@ function markActivePanel(event) {
 
   function newText() {
   console.log('hi')
-  var number = $('textarea').length
-  $("#page").append("<div id='panel-"+number+"'><textarea id='text-box"+number+"'class='panel'></textarea> </div>")
+  var number = $('panel').length
+  $("#page").append(
+    "<div id='panel-"+number+"' class='panel'><textarea id='text-box-"+number+"'>Write Here</textarea> </div>")
  }
 
 

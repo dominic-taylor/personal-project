@@ -5,8 +5,15 @@ main {
 textarea {
   resize: none;
   border: none;
-  height: 90%;
-  width: 90%;
+  height: 80%;
+  width: 80%;
+}
+img {
+  max-width: 100%
+  z-index: -1;
+}
+#speech{
+  width:100%;
 }
 #wrapper {
   width: 100%;
@@ -31,15 +38,20 @@ textarea {
 }
 .menu-btn{
   display: inline;
-  margin: 5px auto;
+  margin: 20px auto;
 }
 .panel {
   display: inline-block;
+  background-color: #FFFFFF;
   height: 100px;
   width: 100px;
   border: 1px solid #000000;
   margin: 2px auto;
   position: relative;
+}
+
+.text-panel{
+  display: inline-block;
 }
 .panel.ui-resizable-handle {
   position: relative;
@@ -56,11 +68,7 @@ textarea {
   border: 1px solid #3399FF;
   margin: 2px;
 }
-.text-box {
-display:inline-block;
- resize: none;
- border: 1px solid #72FF33;
-}
+
 .big-panel {
   display: block;
   float: left;
