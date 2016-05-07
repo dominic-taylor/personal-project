@@ -9,4 +9,7 @@ With this project, I would like the user to be able to take images and add them 
 
 ##MVP
 * A user can add images to a page in a grid and add text.
-* At least one passing test. 
+* At least one passing test.
+
+## Retrospective
+* Need to look up how to do DOM testing.

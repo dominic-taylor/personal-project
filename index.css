@@ -2,18 +2,19 @@ main {
   text-align: center;
 }
 
-textarea {
-  background: none;
+.text-box {
+  font-size: 15px;
   resize: none;
-  border: none;
-  height: 40%;
-  width: 50%;
-  position: absolute;
-  left: 35%;
-  top: 50px;
+  border: transparent;
+  text-align: center;
+  margin: 8%;
+  height: 60%;
+  width: 80%;
+
 }
 img {
-  width: 100%
+  height: 100%;
+  width: 100%;
   z-index: -1;
 }
 #speech{
@@ -39,6 +40,34 @@ img {
 }
 .image-url-input{
   resize: none;
+}
+.arrow_box {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 35px
+}
+.arrow_box:after, .arrow_box:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.arrow_box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  border-width: 10px;
+  margin-left: -10px;
+}
+.arrow_box:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-top-color: #000000;
+  border-width: 11px;
+  margin-left: -11px;
 }
 .menu-btn{
   display: inline;
