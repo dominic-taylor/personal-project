@@ -11,31 +11,24 @@
     <main>
       <h1>ComiCapp</h1>
       <div id='wrapper'>
-
         <div id='page'>
           <div id='panel-1' class='panel' ></div>
-          <div id='panel-2' class='panel' ><img id='speech' src='http://vignette2.wikia.nocookie.net/starwars/images/3/37/Speech_balloon.svg/revision/latest?cb=20080812144944'</img><textarea id='text-box' name='textarea' rows='1' cols='10'>Write something here</textarea></div>
+          <div id='panel-2' class='panel arrow_box'><textarea spellcheck="false" id="text-box" class="text-box" name="textarea" rows="1" cols="10">Write something here'</textarea></div>
           <div id='panel-3' class='panel' ></div>
         </div> <!-- end page -->
 
         <div id='menu'>
-
           <h3>Menu</h3>
-
           <button class='menu-btn' onclick='newPanel()'>New Panel</button>
           <button class='menu-btn' onclick='newText()'>New Text Box</button>
           <button class='menu-btn' onclick='destroyPanel()'>Remove</button>
-
           <form>
             <input type='text' id='image-url' name='imageurl' value='Enter image URL' onclick='this.select()'>
             <button class='menu-btn' id='submit-image'>Add Image</button>
           </form>
-
         </div> <!-- end menu -->
-
       </div> <!-- end wrapper -->
   </main>
-
     <script src='http://code.jquery.com/jquery-1.10.2.js'></script>
     <script src='http://code.jquery.com/ui/1.10.4/jquery-ui.js'></script>
     <script src='index.js'></script>
