@@ -53,4 +53,3 @@ $(document).ready(function() {
     document.getElementById(panel[0].id).innerHTML='<img src="'+url+'"/> '
     document.getElementById(panel[0].id).classList.remove('panel-active')
   }
-}
