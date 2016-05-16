@@ -101,13 +101,3 @@ img {
   border: 1px solid #3399FF;
   margin: 2px;
 }
-
-.big-panel {
-  display: block;
-  float: left;
-  height: 200px;
-  width: 200px;
-  border: 1px solid #000000;
-  margin: 2px;
-  margin-left: 30px;
-}
