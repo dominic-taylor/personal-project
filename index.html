@@ -18,14 +18,19 @@
         </div> <!-- end page -->
 
         <div id='menu'>
-          <h3>Menu</h3>
-          <button class='menu-btn' onclick='newPanel()'>New Panel</button>
-          <button class='menu-btn' onclick='newText()'>New Text Box</button>
-          <button class='menu-btn' onclick='destroyPanel()'>Remove</button>
-          <form>
-            <input type='text' id='image-url' name='imageurl' value='Enter image URL' onclick='this.select()'>
-            <button class='menu-btn' id='submit-image'>Add Image</button>
-          </form>
+          <div id='btn-box'>
+            <button class='menu-btn' onclick='newPanel()'>N E W    P A N E L</button>
+            <button class='menu-btn' onclick='newText()'>N E W    T E X T    B O X</button>
+            <button class='menu-btn' onclick='destroyPanel()'>R E M O V E</button>
+            <form>
+            <button class='menu-btn' id='submit-image'>A D D    I M A G E</button>
+            <input type='text' id='image-url' class='menu-btn' name='imageurl' value='Enter image URL' onclick='this.select()'>
+            </form>
+          </div>
+            <div id='how-to'>
+                    <h3>Instructions</h3>
+                     <p>Add panels or word balloons with the menu buttons. These can be dragged and resized when selected by clicking on them. Load an image into a selected panel by putting the image URL into the text box and clicking 'ADD IMAGE'.</p>
+            </div>
         </div> <!-- end menu -->
       </div> <!-- end wrapper -->
   </main>
