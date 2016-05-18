@@ -33,7 +33,7 @@ img {
   width: 1000px;
   border: 3px solid #000000;
   box-shadow: 10px 10px 5px #888888;
-  margin: 35px;
+  margin: 50px auto 130px auto
 }
 
 #menu {
@@ -43,6 +43,7 @@ img {
   border: 3px solid #000000;
   box-shadow: 10px 10px 5px #888888;
   margin: 20px auto;
+  padding: 15px 0px 15px;
 }
 #btn-box {
   display: inline-block;
@@ -52,9 +53,15 @@ img {
   display: inline-block;
   width: 35%;
 }
-/*#image-url{
-  width: 90%;
-}*/
+#comic-title{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 38px;
+  margin-top: 30px;
+  margin-left: -400px;
+  border: 3px solid #000000;
+  box-shadow: 10px 10px 5px #888888;
+  padding: 10px;
+}
 .image-url-input{
   resize: none;
 }
@@ -86,11 +93,20 @@ img {
   border-width: 11px;
   margin-left: -11px;
 }
-.menu-btn{
-  display: block;;
+.menu-btn, .menu-btn:focus {
+  display: block;
   margin: 5px;
-  height: 20%;
+  height: 30px;
   width: 90%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background: #FFFFFF;
+  font-size: 16px;
+  outline: none;
+}
+
+.menu-btn:active {
+  box-shadow: inset 2px 2px #666666;
+  background: #E6E6E6;
 }
 .panel {
   display: inline-block;

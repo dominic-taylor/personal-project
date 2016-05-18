@@ -9,27 +9,29 @@
   </head>
   <body>
     <main>
-      <h1>ComiCapp</h1>
+      <form>
+        <input type='text' id='comic-title'   spellcheck="false" value='ComiCapp' onclick='this.select()'>
+      </form>
       <div id='wrapper'>
         <div id='page'>
           <div id='panel-1' class='panel' ></div>
-          <div id='panel-2' class='panel arrow_box'><textarea spellcheck="false" id="text-box" class="text-box" name="textarea" rows="1" cols="10">Write something here'</textarea></div>
+          <div id='panel-2' class='panel arrow_box'><textarea spellcheck="false" id="text-box" class="text-box" name="textarea" rows="1" cols="10">Write something here!</textarea></div>
           <div id='panel-3' class='panel' ></div>
         </div> <!-- end page -->
 
         <div id='menu'>
           <div id='btn-box'>
-            <button class='menu-btn' onclick='newPanel()'>N E W    P A N E L</button>
-            <button class='menu-btn' onclick='newText()'>N E W    T E X T    B O X</button>
-            <button class='menu-btn' onclick='destroyPanel()'>R E M O V E</button>
+            <button class='menu-btn' onclick='newPanel()'>PANEL</button>
+            <button class='menu-btn' onclick='newText()'>WORD BALLOON</button>
+            <button class='menu-btn' onclick='destroyPanel()'>REMOVE</button>
             <form>
-            <button class='menu-btn' id='submit-image'>A D D    I M A G E</button>
+            <button class='menu-btn' id='submit-image'>ADD IMAGE</button>
             <input type='text' id='image-url' class='menu-btn' name='imageurl' value='Enter image URL' onclick='this.select()'>
             </form>
           </div>
             <div id='how-to'>
                     <h3>Instructions</h3>
-                     <p>Add panels or word balloons with the menu buttons. These can be dragged and resized when selected by clicking on them. Load an image into a selected panel by putting the image URL into the text box and clicking 'ADD IMAGE'.</p>
+                     <p>Add panels or word balloons with the menu buttons. These can be dragged and resized when selected by clicking on them. Load an image into a selected panel by putting the image URL into the text box and clicking 'ADD IMAGE'. Give your comic a title by clicking on the text above the page.</p>
             </div>
         </div> <!-- end menu -->
       </div> <!-- end wrapper -->
