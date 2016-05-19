@@ -1,7 +1,7 @@
 {
   "name": "ComiCapp",
   "version": "1.0.0",
-  "description": "quick static image story telling creation",
+  "description": "quick webcomic creation",
   "main": "index.js",
   "scripts": {
     "start": "budo index.js -d --serve bundle.js --live",
